@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: lightblue;
+        }
+        .highlight {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>INVENTORY SYSTEMS</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Supplier</th>
+        <th>Date</th>
+        <th>Image</th>
+    </tr>
+    <tr>
+        <td>10001</td>
+        <td>Boy Bawang Adobo (pc)</td>
+        <td>1000</td>
+        <td></td>
+        <td>5/14/2019</td>
+        <td rowspan="6">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Boy_Bawang_Cornick.png" alt="Boy Bawang" width="100">
+        </td>
+    </tr>
+    <tr>
+        <td>10002</td>
+        <td>Boy Bawang Adobo (pack)</td>
+        <td>200</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10003</td>
+        <td>Boy Bawang Garlic (pc)</td>
+        <td>3000</td>
+        <td class="highlight" rowspan="2">KSK</td>
+        <td>5/15/2019</td>
+    </tr>
+    <tr>
+        <td>10004</td>
+        <td>Boy Bawang Garlic (pack)</td>
+        <td>150</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10005</td>
+        <td>Boy Bawang Spicy (pc)</td>
+        <td>4000</td>
+        <td rowspan="2"></td>
+        <td>5/16/2019</td>
+    </tr>
+    <tr>
+        <td>10006</td>
+        <td>Boy Bawang Spicy (pack)</td>
+        <td>240</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10007</td>
+        <td>Boy Bawang BBQ (pc)</td>
+        <td>3000</td>
+        <td class="highlight" rowspan="2">KSK</td>
+        <td>5/17/2019</td>
+        <td rowspan="2">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Boy_Bawang_Cornick.png" alt="Boy Bawang" width="100">
+        </td>
+    </tr>
+    <tr>
+        <td>10008</td>
+        <td>Boy Bawang BBQ (pack)</td>
+        <td>210</td>
+        <td></td>
+    </tr>
+</table>
+
+<h2>Contact Form</h2>
+<form>
+    <ul style="list-style-type: none;">
+        <li>
+            <label for="name">Your Name*</label><br>
+            <input type="text" id="name" name="name">
+        </li>
+        <br>
+        <li>
+            <label for="email">Email*</label><br>
+            <input type="email" id="email" name="email">
+        </li>
+        <br>
+        <li>
+            <label for="contact">Contact No.*</label><br>
+            <input type="text" id="contact" name="contact">
+        </li>
+        <br>
+        <li>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </li>
+        <br>
+        <li><small><i>* required field</i></small></li>
+        <br>
+        <li>
+            <button type="submit">Send</button>
+        </li>
+    </ul>
+</form>
+
+</body>
+</html>
