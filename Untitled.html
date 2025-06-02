@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Registration Form</title>
+  <link rel="stylesheet" href="external_registration.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>New Employee Registration</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <label for="status">Civil Status:</label>
+        <select id="status" name="status">
+          <option>Single</option>
+          <option>Married</option>
+          <option>Widowed</option>
+        </select>
+
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Employment Details</legend>
+        <label for="employeeID">Employee ID:</label>
+        <input type="text" id="employeeID" name="employeeID" required />
+
+        <label for="position">Position Title:</label>
+        <input type="text" id="position" name="position" required />
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required />
+
+        <label for="dateHired">Date Hired:</label>
+        <input type="date" id="dateHired" name="dateHired" required />
+
+        <label for="employmentType">Employment Type:</label>
+        <select id="employmentType" name="employmentType">
+          <option>Full-time</option>
+          <option>Part-time</option>
+          <option>Contractual</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Government IDs</legend>
+        <label for="tin">TIN:</label>
+        <input type="text" id="tin" name="tin" />
+
+        <label for="sss">SSS Number:</label>
+        <input type="text" id="sss" name="sss" />
+
+        <label for="philhealth">PhilHealth Number:</label>
+        <input type="text" id="philhealth" name="philhealth" />
+
+        <label for="pagibig">Pag-IBIG Number:</label>
+        <input type="text" id="pagibig" name="pagibig" />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
